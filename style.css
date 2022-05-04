@@ -1,0 +1,90 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  z-index: 99;
+}
+
+.navbar_list {
+  float: left;
+}
+
+.navbar_text {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.home_section {
+  background: lightyellow;
+  width: 100%;
+  height: 100vh;
+}
+
+.about_section {
+  background: lightblue;
+  width: 100%;
+  height: 100vh;
+}
+
+.contact_section {
+  background: lightgreen;
+  width: 100%;
+  height: 100vh;
+}
+
+.text_column {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.photo_column {
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.text_container {
+  position: relative;
+  width: 80%;
+  top: 100px;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.image {
+  position: relative;
+  top: 100px;
+  width: 60%;
+  height: auto;
+
+  display: block;
+  margin: 0 auto;
+
+  border-radius: 40px;
+}
+
+.footer_text {
+  position: relative;
+  top: 90px;
+  left: 20px;
+  display: inline-block;
+  color: white;
+}
