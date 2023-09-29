@@ -1,0 +1,31 @@
+.contact_text{
+    position: relative;
+    top: 40px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-family: "Arial";
+    text-decoration: none;
+    display: block;
+}
+
+.socials_button {
+    background-color: #AFE4DE;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    row-gap: 30px;
+    padding-top: 10px;
+}
+
+i {
+    margin-right: 10px;
+}

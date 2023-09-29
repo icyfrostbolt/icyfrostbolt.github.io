@@ -1,0 +1,50 @@
+.divider {
+  background-image: url('images/scenery.jpg');
+  background-size: 50% 100%;
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 93vh;
+}
+
+.rows {
+  width: 100%;
+  height: 22vh;
+  display: grid;
+  background-color: #AFE4DE;
+  padding-top: 10vh;
+  background-clip: content-box;
+}
+
+.landing_text{
+  position: relative;
+  color: black;
+  font-size: 20px;
+  padding-left: 10px;
+  width: 100%;
+  font-family: "Arial";
+  display: inline-block;
+}
+
+.landing_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.left_mid_container {
+  height: 60vh;
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 10%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 5%;
+}
+
+.right_container {
+  height: 25%;
+  justify-content: center;
+  float: right;
+}
