@@ -7,11 +7,10 @@
 }
 
 .rows {
-  width: 100%;
+  width: 60vh;
   height: 22vh;
   display: grid;
   background-color: #AFE4DE;
-  padding-top: 10vh;
   background-clip: content-box;
 }
 
@@ -47,4 +46,51 @@
   height: 25%;
   justify-content: center;
   float: right;
+}
+
+@media only screen and (max-width: 1500px) {
+  .rows {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .rows {
+    width: 40vh;
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .divider {
+    background-size: 100% 100%;
+    display: block;
+  }
+
+  .rows {
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .divider {
+    background-size: 100% 100%;
+    display: block;
+  }
+
+  .rows {
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .divider {
+    background-size: 100% 100%;
+    display: block;
+  }
+
+  .rows {
+    height: 40vh;
+    width: 60vh;
+  }
 }
