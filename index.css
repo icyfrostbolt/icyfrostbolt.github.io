@@ -90,7 +90,8 @@
   }
 
   .rows {
+    padding-top: 10vh;
+    padding-left: 10vh;
     height: 40vh;
-    width: 60vh;
   }
 }
