@@ -59,7 +59,7 @@ ul {
 .title_container {
   background-color: darkturquoise;
   width: 50%;
-  height: 150px;
+  height: 30vh;
   position: relative;
   top: 25px;
   justify-content: center;
@@ -142,4 +142,10 @@ ul {
 
 a:hover {
   background-color: deepskyblue;
+}
+
+@media only screen and (max-width: 525px) {
+  .title_container {
+    height: 40vh;
+  }
 }
