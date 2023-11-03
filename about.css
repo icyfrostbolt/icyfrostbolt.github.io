@@ -66,3 +66,75 @@ i {
     margin: auto;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 1500px) {
+    .rows {
+        row-gap: 2vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .section {
+        height: 125vh;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .section {
+        height: 150vh;
+    }
+    .skill_gallery {
+        grid-template-columns: repeat(2, 1fr);
+        top: 6vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .section {
+        height: 175vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section {
+        height: 200vh;
+        width: 100vh;
+    }
+    .skill_gallery {
+        grid-template-columns: repeat(1, 1fr);
+        top: 6vh;
+    }
+    .image_slot {
+        width: 100%;
+    }
+    .text_container {
+        width: 80%;
+    }
+    .rows {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .section {
+        height: 185vh;
+        width: 90vh;
+    }
+    .skill_gallery {
+        grid-template-columns: repeat(1, 1fr);
+        top: 6vh;
+    }
+    .image_slot {
+        width: 100%;
+    }
+    .text_container {
+        width: 90%;
+    }
+    .rows {
+        width: 100%;
+    }
+}
+
+[class*="col-"] {
+    width: 100%;
+}
