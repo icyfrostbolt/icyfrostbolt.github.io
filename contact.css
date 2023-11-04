@@ -11,8 +11,8 @@
 
 .socials_button {
     background-color: #AFE4DE;
-    width: 50%;
-    height: 100px;
+    width: 40vw;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,10 +22,35 @@
 
 .buttons {
     display: grid;
-    row-gap: 30px;
-    padding-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10vh;
+    column-gap: 10vh;
+    padding-top: 5vh;
+    padding-left: 8%;
+    width: 50vw;
 }
 
 i {
     margin-right: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .buttons {
+        padding-left: 6%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .buttons {
+        width: 100vw;
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        row-gap: 5vh;
+        padding-top: 2vh;
+    }
+
+    .socials_button {
+        width: 80vw;
+    }
 }
