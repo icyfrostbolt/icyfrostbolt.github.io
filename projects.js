@@ -34,6 +34,11 @@ projects = [
     "description": "A small pixel character creation engine I made.",
     "image": "sprite.png",
   },
+  {
+    "name": "pAIge Sounds",
+    "description": "Hackathon project. Creates playlist based on content from a book.",
+    "image": "PAigeSounds.png",
+  }
 ]
 
 for (let i=0; i < projects.length; i++) {
