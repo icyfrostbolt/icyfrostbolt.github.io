@@ -55,7 +55,7 @@ for (let i=0; i < projects.length; i++) {
   image_container.classList.add("image_container");
 
   image = document.createElement("img");
-  image.src = 'images/' + project.image;
+  image.src = '../images/' + project.image;
   image.classList.add("image");
 
   image_container.appendChild(image);
