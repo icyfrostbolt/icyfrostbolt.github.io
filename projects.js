@@ -37,7 +37,7 @@ projects = [
   {
     "name": "pAIge Sounds",
     "description": "Hackathon project. Creates playlist based on content from a book.",
-    "image": "PAigeSounds.png",
+    "image": "paige.png",
   }
 ]
 
