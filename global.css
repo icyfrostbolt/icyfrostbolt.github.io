@@ -52,7 +52,7 @@ ul {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 2.5vh 16px;
   text-decoration: none;
 }
 
@@ -138,6 +138,7 @@ ul {
   font-size: 50px;
   font-family: "Arial";
   display: inline-block;
+  line-height: 14vh;
 }
 
 a:hover {
