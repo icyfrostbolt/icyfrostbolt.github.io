@@ -1,29 +1,29 @@
 projects = [
   {
     "name": "Ultimate Mafia",
-    "description": "An open source chat Mafia site that I contributed to.",
+    "description": "An open source chat Mafia/Minigames site that I contributed to. (Contributions were made on an alternate GitHub account, starryburst)",
     "image": "ultimatemafia.png",
     "link": "https://github.com/UltiMafia/Ultimafia",
   },
-  {
+  /*{
     "name": "Valdivian",
-    "description": "Made during a hackathon, Valdivian is a platform that is used to search up various tutorials.",
+    "description": "Hackathon Project. Valdivian is a platform that is used to search up various tutorials.",
     "image": "valdivian.png",
     "link": "https://devpost.com/software/valdivian",
-  },
+  },*/
   {
     "name": "Decentralized Chat",
-    "description": "A discord bot made to communicate anonymously via proxies.",
+    "description": "A discord bot made to communicate anonymously via proxies and alternate profiles, perfect for roleplay!",
     "image": "decentralizedchat.png",
     "link": "https://github.com/icyfrostbolt/DecentralizedChat",
   },
   {
     "name": "Last.fm Twitter",
-    "description": "A script that posts last.fm listens onto twitter.",
+    "description": "A script that posts Last.fm listens onto Twitter. (Now defunct due to the Twitter API paywall.)",
     "image": "twitter.png",
     "link": "https://github.com/icyfrostbolt/Last.fm-Twitter",
   },
-  {
+  /*{
     "name": "Music Generation",
     "description": "A program that allows you to visualize music and export this visualzation into a MIDI file.",
     "image": "music.png",
@@ -34,16 +34,16 @@ projects = [
     "description": "Made a Flappy Bird game using Gamemaker.",
     "image": "flappy.png",
     "link": "https://github.com/icyfrostbolt/Flappy-Bird",
-  },
+  },*/
   {
     "name": "Spritemaker",
-    "description": "A small pixel character creation engine I made.",
+    "description": "A small pixel character creation engine I made, inspired by the character creator from life simulation games!",
     "image": "sprite.png",
     "link": "https://github.com/icyfrostbolt/Cuboid-Spritemaker",
   },
   {
     "name": "pAIge Sounds",
-    "description": "Hackathon project. Creates playlist based on content from a book.",
+    "description": "Hackathon project from DubHacks 2023. Creates a Spotify playlist based on content from a book.",
     "image": "paige.png",
     "link": "https://devpost.com/software/paige-sounds",
   }
