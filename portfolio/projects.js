@@ -4,6 +4,8 @@ projects = [
     "description": "An open source chat Mafia/Minigames site that I contributed to. (Contributions were made on an alternate GitHub account, starryburst)",
     "image": "ultimatemafia.png",
     "link": "https://github.com/UltiMafia/Ultimafia",
+    "labels": ["Javascript", "HTML", "CSS"],
+    "categories": ["Game Dev"],
   },
   /*{
     "name": "Valdivian",
@@ -16,41 +18,50 @@ projects = [
     "description": "A discord bot made to communicate anonymously via proxies and alternate profiles, perfect for roleplay!",
     "image": "decentralizedchat.png",
     "link": "https://github.com/icyfrostbolt/DecentralizedChat",
+    "labels": ["Python"],
+    "categories": [],
   },
   {
     "name": "Last.fm Twitter",
     "description": "A script that posts Last.fm listens onto Twitter. (Now defunct due to the Twitter API paywall.)",
     "image": "twitter.png",
     "link": "https://github.com/icyfrostbolt/Last.fm-Twitter",
+    "labels": ["Python"],
+    "categories": [],
   },
   /*{
     "name": "Music Generation",
     "description": "A program that allows you to visualize music and export this visualzation into a MIDI file.",
     "image": "music.png",
     "link": "https://github.com/icyfrostbolt/Music-Generation",
-  },
+  },*/
   {
     "name": "Flappy Bird",
-    "description": "Made a Flappy Bird game using Gamemaker.",
+    "description": "Made a Flappy Bird game using Gamemaker to teach others how to use GameMaker.",
     "image": "flappy.png",
     "link": "https://github.com/icyfrostbolt/Flappy-Bird",
-  },*/
+    "labels": ["GameMaker"],
+    "categories": ["Game Dev"],
+  },
   {
     "name": "Spritemaker",
     "description": "A small pixel character creation engine I made, inspired by the character creator from life simulation games!",
     "image": "sprite.png",
     "link": "https://github.com/icyfrostbolt/Cuboid-Spritemaker",
+    "labels": ["Python"],
+    "categories": [],
   },
   {
     "name": "pAIge Sounds",
     "description": "Hackathon project from DubHacks 2023. Creates a Spotify playlist based on content from a book.",
     "image": "paige.png",
     "link": "https://devpost.com/software/paige-sounds",
+    "labels": ["Python", "HTML", "CSS"],
+    "categories": [],
   }
 ]
 
-for (let i=0; i < projects.length; i++) {
-  //console.log(projects[i]);
+for (let i = 0; i < projects.length; i++) {
   project = projects[i];
 
   // Create container
@@ -83,10 +94,47 @@ for (let i=0; i < projects.length; i++) {
   text.classList.add("reg_text");
   text.innerHTML = project.description;
 
+  tags_container = document.createElement("div");
+  tags_container.classList.add("tags_container");
+
+  label_sub_container = document.createElement("div");
+  label_sub_container.classList.add("label_sub_container");
+
+  for (let j = 0; j < project.labels.length; j++) {
+    label_container = document.createElement("span");
+    label_container.classList.add("label_container");
+
+    label = document.createElement("p")
+    label.classList.add("label_text");
+    label.innerHTML = project.labels[j];
+
+    label_container.appendChild(label);
+
+    label_sub_container.appendChild(label_container);
+    tags_container.appendChild(label_sub_container);
+  }
+
+  category_sub_container = document.createElement("div");
+  category_sub_container.classList.add("label_sub_container");
+  for (let k = 0; k < project.categories.length; k++) {
+    category_container = document.createElement("span");
+    category_container.classList.add("label_container");
+
+    category = document.createElement("p")
+    category.classList.add("category_text");
+    category.innerHTML = project.categories[k];
+
+    category_container.appendChild(category);
+
+    category_sub_container.appendChild(category_container);
+    tags_container.appendChild(category_sub_container);
+  }
+
   text_container.appendChild(title);
   text_container.appendChild(text);
 
   container.appendChild(image_container);
+  container.appendChild(tags_container);
   container.appendChild(text_container);
 
   project_container.appendChild(container);
