@@ -4,7 +4,7 @@ projects = [
     "description": "An open source chat Mafia/Minigames site that I contributed to. (Contributions were made on an alternate GitHub account, starryburst)",
     "image": "ultimatemafia.png",
     "link": "https://github.com/UltiMafia/Ultimafia",
-    "labels": ["Javascript", "HTML", "CSS"],
+    "labels": ["JavaScript", "HTML", "CSS"],
     "categories": ["Game Dev"],
   },
   /*{
@@ -58,7 +58,31 @@ projects = [
     "link": "https://devpost.com/software/paige-sounds",
     "labels": ["Python", "HTML", "CSS"],
     "categories": [],
+  },
+  {
+    "name": "Predicting Forest Fires",
+    "description": "Analysis of forest fires in Montesinho National park to see if severity is predictable. Was responsable for part of the code.",
+    "image": "forest-fire.png",
+    "link": "https://github.com/icyfrostbolt/Forest-Fire-Prediction",
+    "labels": ["R"],
+    "categories": ["Data Science"],
+  },
+  {
+    "name": "Pickup",
+    "description": "Hackathon project from nwHacks 2024.",
+    "image": "pickup.png",
+    "link": "https://github.com/MatthewAnder/nwhacks-project/tree/main",
+    "labels": ["HTML", "CSS", "React", "JavaScript"],
+    "categories": [],
   }
+  /*{
+    "name": "ShowTracker",
+    "description": "A program that allows you to track your shows.",
+    "image": "",
+    "link": "",
+    "labels": ["Java"],
+    "categories": [],
+  },*/
 ]
 
 for (let i = 0; i < projects.length; i++) {
@@ -114,8 +138,6 @@ for (let i = 0; i < projects.length; i++) {
     tags_container.appendChild(label_sub_container);
   }
 
-  category_sub_container = document.createElement("div");
-  category_sub_container.classList.add("label_sub_container");
   for (let k = 0; k < project.categories.length; k++) {
     category_container = document.createElement("span");
     category_container.classList.add("label_container");
@@ -126,8 +148,8 @@ for (let i = 0; i < projects.length; i++) {
 
     category_container.appendChild(category);
 
-    category_sub_container.appendChild(category_container);
-    tags_container.appendChild(category_sub_container);
+    label_sub_container.appendChild(category_container);
+    tags_container.appendChild(label_sub_container);
   }
 
   text_container.appendChild(title);
