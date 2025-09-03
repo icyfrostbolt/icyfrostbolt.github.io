@@ -74,7 +74,7 @@ projects = [
     "link": "https://github.com/MatthewAnder/nwhacks-project/tree/main",
     "labels": ["HTML", "CSS", "React", "JavaScript"],
     "categories": [],
-  }
+  },
   /*{
     "name": "ShowTracker",
     "description": "A program that allows you to track your shows.",
@@ -83,6 +83,14 @@ projects = [
     "labels": ["Java"],
     "categories": [],
   },*/
+  {
+    "name": "Internship Placement Prediction",
+    "description": "Using logistic regression to help predict factors which are important for internship placement.",
+    "image": "",
+    "link": "https://github.com/icyfrostbolt/STAT-301-Project",
+    "labels": ["R"],
+    "categories": ["Data Science"],
+  }
 ]
 
 for (let i = 0; i < projects.length; i++) {
