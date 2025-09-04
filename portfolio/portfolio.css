@@ -92,9 +92,9 @@ img {
 
 .label_container {
     position: relative;
-    display: inline;
-    margin: 10px;
-    width: 100%;
+    display: inline-block;
+    left: 10px;
+    margin: 5px;
     text-align: center;
     min-width: 0;
     border-radius: 5px;
@@ -104,7 +104,6 @@ img {
     position: relative;
     display: inline-block;
     justify-items: center;
-    margin: 5px;
     width: 100%;
     text-align: center;
     min-width: 0;

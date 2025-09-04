@@ -1,6 +1,8 @@
 .text_container {
     background-color: #AFE4DE;
     width: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -11,21 +13,25 @@
     float: right;
     display: grid;
     width: 50%;
-    row-gap: 3vh;
+    height: 60%;
+    row-gap: 4vh;
     padding-top: 50px;
 }
 
 .image_slot {
     float: left;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     width: 50%;
+    height: 65%;
     row-gap: 30px;
     padding-top: 50px;
 }
 
 img {
-    width: 80%;
-    padding-left: 10%;
+    width: 60%;
+    padding-left: 15%;
 }
 
 .section {
