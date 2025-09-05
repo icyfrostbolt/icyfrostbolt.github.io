@@ -86,7 +86,7 @@ projects = [
   {
     "name": "Internship Placement Prediction",
     "description": "Using logistic regression to help predict factors which are important for internship placement.",
-    "image": "",
+    "image": "placement.png",
     "link": "https://github.com/icyfrostbolt/STAT-301-Project",
     "labels": ["R"],
     "categories": ["Data Science"],
